@@ -21,7 +21,7 @@ public class TopicController {
         return topicService.getAllTopics();
     
     }
-
+    
     @RequestMapping("/topics/{foo}")     //{ } makes for a variable.
     public Topic getTopic(@PathVariable("foo") String id)  //Spring will find the variable in the path
     {
