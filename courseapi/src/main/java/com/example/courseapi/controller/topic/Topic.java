@@ -1,8 +1,13 @@
 package com.example.courseapi.controller.topic;
 
-//here's a topic model object
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+//here's a topic model object - which now becomes a table
+@Entity //to make it a table
 public class Topic {
 
+    @Id     //to make id as primary key
     private String id;
     private String name;
     private String description;
